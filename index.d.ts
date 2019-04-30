@@ -2,7 +2,7 @@
 
 declare function Visible(
   when: any,
-  children: React.ReactChildren,
+  children: React.ReactNode,
   fallback?: React.ReactElement<any>
 ): React.ReactNode;
 
