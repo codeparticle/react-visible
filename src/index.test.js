@@ -32,9 +32,9 @@ describe('Visible', () => {
     expect(testComponentWithoutFallback({ condition: true })).toEqual(children)
   })
   it('Renders null when its condition is not met, and no fallback is provided', () => {
-    expect(testComponent({ condition: undefined })).toEqual(null)
-    expect(testComponent({ condition: null })).toEqual(null)
-    expect(testComponent({ condition: 0 })).toEqual(null)
+    expect(testComponentWithoutFallback({ condition: undefined })).toEqual(null)
+    expect(testComponentWithoutFallback({ condition: null })).toEqual(null)
+    expect(testComponentWithoutFallback({ condition: 0 })).toEqual(null)
     expect(testComponentWithoutFallback({ condition: false })).toEqual(null)
   })
 })
