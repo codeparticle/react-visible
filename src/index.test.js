@@ -1,13 +1,14 @@
 import React from 'react'
+
 import { Visible } from './'
 
 describe('Visible', () => {
   const children = <p>test</p>
-  const FallbackComponent = ({text}) => <h1>{text}</h1>
+  const FallbackComponent = ({ text }) => <h1>{text}</h1>
 
   const testComponent = ({ condition }) => Visible({
     when: condition,
-    fallback: FallbackComponent({ text: 'loading'}),
+    fallback: FallbackComponent({ text: 'loading' }),
     children
   })
 
@@ -22,12 +23,18 @@ describe('Visible', () => {
 
   it('Shows a fallback component when its condition is not met', () => {
     expect(testComponent({ condition: false })).toEqual(<h1>loading</h1>)
+    expect(testComponent({ condition: null })).toEqual(<h1>loading</h1>)
+    expect(testComponent({ condition: undefined })).toEqual(<h1>loading</h1>)
+    expect(testComponent({ condition: 0 })).toEqual(<h1>loading</h1>)
   })
 
   it('Renders children when its condition is met and no fallback is provided', () => {
     expect(testComponentWithoutFallback({ condition: true })).toEqual(children)
   })
   it('Renders null when its condition is not met, and no fallback is provided', () => {
+    expect(testComponentWithoutFallback({ condition: undefined })).toEqual(null)
+    expect(testComponentWithoutFallback({ condition: null })).toEqual(null)
+    expect(testComponentWithoutFallback({ condition: 0 })).toEqual(null)
     expect(testComponentWithoutFallback({ condition: false })).toEqual(null)
   })
 })

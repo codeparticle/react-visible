@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'
 
 /**
  * Conditionally show children, with an optional fallback component.
@@ -19,9 +19,9 @@ export function Visible ({ children, fallback, when }) {
 
 Visible.propTypes = {
   /* any amount of elements can be supplied as children */
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   /* If you're using a fallback component, it should be a single JSX element. */
   fallback: PropTypes.element,
-  /* when is a condition that will be cast to boolean. The prop type is set to 'any' for null / existential checks as well. */
-  when: PropTypes.any.isRequired,
+  /* when is a condition that will be cast to boolean */
+  when: PropTypes.any,
 }
