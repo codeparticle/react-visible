@@ -1,13 +1,14 @@
 import React from 'react'
+
 import { Visible } from './'
 
 describe('Visible', () => {
   const children = <p>test</p>
-  const FallbackComponent = ({text}) => <h1>{text}</h1>
+  const FallbackComponent = ({ text }) => <h1>{text}</h1>
 
   const testComponent = ({ condition }) => Visible({
     when: condition,
-    fallback: FallbackComponent({ text: 'loading'}),
+    fallback: FallbackComponent({ text: 'loading' }),
     children
   })
 
