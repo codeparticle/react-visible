@@ -60,7 +60,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-url": "^1.4.0",
-    "standard-version": "7.0.0"
+    "standard-version": "8.0.1"
   },
   "files": [
     "dist"
