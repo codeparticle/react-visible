@@ -1,6 +1,6 @@
 {
   "name": "@codeparticle/react-visible",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "description": "A simple component to toggle visiblity and provide an optional fallback.",
   "author": "",
   "license": "MIT",
@@ -20,25 +20,29 @@
     "start": "rollup -c -w",
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "postrelease": "yarn release:github && yarn release:npm",
+    "release": "standard-version",
+    "release:github": "git push --no-verify --follow-tags origin master",
+    "release:npm": "npm publish --access public"
   },
   "peerDependencies": {
-    "prop-types": "^15.5.4",
+    "prop-types": ">=15.5.4",
     "react": ">=16.0.0",
     "react-dom": ">=16.0.0"
   },
   "devDependencies": {
     "@svgr/rollup": "^2.4.1",
     "babel-core": "^6.26.3",
-    "babel-eslint": "^8.2.5",
+    "babel-eslint": "^10.1.0",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "cross-env": "^5.1.4",
+    "cross-env": "^7.0.3",
     "eslint": "^5.0.1",
     "eslint-config-standard": "^11.0.0",
-    "eslint-config-standard-react": "^6.0.0",
+    "eslint-config-standard-react": "^8.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^4.0.0",
@@ -55,12 +59,13 @@
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^2.0.3",
-    "rollup-plugin-url": "^1.4.0"
+    "rollup-plugin-url": "^1.4.0",
+    "standard-version": "9.3.0"
   },
   "files": [
     "dist"
   ],
   "dependencies": {
-    "@types/react": "^16.8.15"
+    "@types/react": "^17.0.11"
   }
 }
