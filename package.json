@@ -61,6 +61,6 @@
     "dist"
   ],
   "dependencies": {
-    "@types/react": "^16.8.15"
+    "@types/react": "^17.0.11"
   }
 }
