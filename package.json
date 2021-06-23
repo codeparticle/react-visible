@@ -1,6 +1,6 @@
 {
   "name": "@codeparticle/react-visible",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "A simple component to toggle visiblity and provide an optional fallback.",
   "author": "",
   "license": "MIT",
