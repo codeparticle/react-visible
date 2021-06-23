@@ -3,6 +3,8 @@
 
 # dependencies
 node_modules
+# editors
+.idea
 
 # builds
 build
