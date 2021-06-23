@@ -21,6 +21,7 @@
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build",
+    "postrelease": "yarn release:github && yarn release:npm",
     "release": "standard-version",
     "release:github": "git push --no-verify --follow-tags origin master",
     "release:npm": "npm publish --access public"
