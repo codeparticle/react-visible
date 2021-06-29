@@ -48,7 +48,7 @@
     "prettier": "^2.3.2",
     "react": ">=16.14.0",
     "react-dom": ">=16.14.0",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^4.0.3",
     "rollup": "^2.52.3",
     "standard-version": "^9.3.0"
   },
