@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.5](/codeparticle/react-visible/compare/v1.4.3...v1.4.5) (2022-02-15)
+
+
+### Bug Fixes
+
+* **tests:** Post dependency update fix ([c2cd0b9](/codeparticle/react-visible/commit/c2cd0b964fc30d311c9f1c6cb2ef55b9fa0c40b3))
+
 ### [1.4.3](///compare/v1.4.2...v1.4.3) (2022-01-20)
 
 ### [1.4.2](///compare/v1.4.1...v1.4.2) (2021-06-29)
