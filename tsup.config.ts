@@ -60,8 +60,7 @@ export default defineConfig([{
     `src/**/*`,
     `!src/**/*.snap`,
     `!**/*.md`,
-    `!src/components/**/*.test.{ts,tsx}`,
-    `!src/components/**/*.spec.{ts,tsx}`,
+    `!src/**/*.test.{js,ts,jsx,tsx}`,
     `test/**/*`,
   ],
   dts: {
