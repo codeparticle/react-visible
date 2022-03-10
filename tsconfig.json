@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+      "allowJs": true,
+      "checkJs": false,
+      "esModuleInterop": true,
+      "downlevelIteration": true,
+      "allowSyntheticDefaultImports": true,
+      "diagnostics": true,
+      "experimentalDecorators": true,
+      "importHelpers": true,
+      "jsx": "react",
+      "lib": [
+        "dom",
+        "esnext"
+      ],
+      "module": "esnext",
+      "moduleResolution": "node",
+      "noUnusedLocals": true,
+      "noUnusedParameters": false,
+      "outDir": "./dist/types",
+      "strict": false,
+      "resolveJsonModule": true,
+      "target": "es2015",
+      "noImplicitAny": false,
+      "baseUrl": ".",
+      "skipLibCheck": true
+    },
+    "files": ["src/index.tsx"]
+  }
