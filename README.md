@@ -12,6 +12,8 @@ npm install --save @codeparticle/react-visible
 
 ## Usage
 
+Note: Transitioning from v1 to v2 breaks the test snapshots.
+
 Visible is easy to use. It has two required props, a condition `when` and a child component to render when that condition is true. It also supports the addition of a `fallback` prop if you'd like to show something else as a backup, such as a loader for a request that hasn't completed yet.
 
 ```jsx
