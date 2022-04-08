@@ -11,6 +11,7 @@ updates:
       - dependencies
     versioning-strategy: increase
     ignore:
+      - dependency-name: "@types/react"
       - dependency-name: "@types/node"
         versions:
           - ">= 11.a"
