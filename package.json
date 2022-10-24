@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "eslint": "^8.25.0",
+    "eslint": "^8.26.0",
     "eslint-plugin-react": "^7.31.10",
     "prettier": "^2.7.1",
     "react": "^18.0.0",
